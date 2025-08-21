@@ -1,0 +1,87 @@
+# Build folders
+Debug/
+Release/
+x64/Debug/
+x64/Release/
+bin/
+obj/
+out/
+
+# Visual Studio intermediate files
+ipch/
+*.obj
+*.o
+*.pch
+*.pdb
+*.idb
+*.exp
+*.ilk
+*.sbr
+*.tlh
+*.tli
+*.tmp
+*.log
+*.lastbuildstate
+*.iobj
+*.ipdb
+*.i*cache
+*.tlog/
+*.lastbuildstate
+
+# Visual Studio project/user files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+*.VC.db
+*.VC.VC.opendb
+*.opensdf
+*.sdf
+*.cache
+*.VC.Ignored
+
+# Visual Studio Code
+.vscode/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Executables & libraries
+*.exe
+*.dll
+*.lib
+*.app
+*.out
+*.so
+*.a
+
+# Backup/temporary files
+*~
+*.bak
+*.swp
+*.tmp
+
+# OpenGL / 3rd party binaries
+*.lib
+*.dll
+*.so
+*.a
+
+# MFC resources
+*.res
+*.aps
+*.ncb
+*.sbr
+*.tlb
+*.ocx
+*.tlh
+*.tli
+
+# Misc
+*.log
+*.vspscc
+*.vssscc
