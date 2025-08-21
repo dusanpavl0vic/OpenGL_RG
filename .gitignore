@@ -1,0 +1,70 @@
+# Visual Studio build folders
+Debug/
+Release/
+x64/Debug/
+x64/Release/
+ipch/
+*.obj
+*.o
+*.pch
+*.pdb
+*.idb
+*.exp
+*.ilk
+*.sbr
+*.tlh
+*.tli
+*.tmp
+*.log
+*.lastbuildstate
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+*.VC.db
+*.VC.VC.opendb
+*.opensdf
+*.sdf
+*.cache
+*.VC.Ignored
+
+# Visual Studio Code files
+.vscode/
+
+# CMake (ako koristiš)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Executables
+*.exe
+*.dll
+*.lib
+*.app
+*.out
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Generated files
+*.ipch
+*.tlog/
+*.lastbuildstate
+*.obj
+*.o
+*.a
+*.lo
+*.la
+*.slo
+
+# OpenGL/GLFW/GLEW/GLM binaries
+*.lib
+*.dll
+*.so
+*.a
