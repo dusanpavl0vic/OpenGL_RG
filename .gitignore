@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 # Build folders
+=======
+# Visual Studio build folders
+>>>>>>> 47c6b83028685fe0ff9247af9bdcd7fe1515257d
 Debug/
 Release/
 x64/Debug/
 x64/Release/
+<<<<<<< HEAD
 bin/
 obj/
 out/
 
 # Visual Studio intermediate files
+=======
+>>>>>>> 47c6b83028685fe0ff9247af9bdcd7fe1515257d
 ipch/
 *.obj
 *.o
@@ -22,6 +29,7 @@ ipch/
 *.tmp
 *.log
 *.lastbuildstate
+<<<<<<< HEAD
 *.iobj
 *.ipdb
 *.i*cache
@@ -29,6 +37,10 @@ ipch/
 *.lastbuildstate
 
 # Visual Studio project/user files
+=======
+
+# Visual Studio files
+>>>>>>> 47c6b83028685fe0ff9247af9bdcd7fe1515257d
 *.suo
 *.user
 *.userosscache
@@ -41,21 +53,33 @@ ipch/
 *.cache
 *.VC.Ignored
 
+<<<<<<< HEAD
 # Visual Studio Code
 .vscode/
 
 # CMake
+=======
+# Visual Studio Code files
+.vscode/
+
+# CMake (ako koristiš)
+>>>>>>> 47c6b83028685fe0ff9247af9bdcd7fe1515257d
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 
+<<<<<<< HEAD
 # Executables & libraries
+=======
+# Executables
+>>>>>>> 47c6b83028685fe0ff9247af9bdcd7fe1515257d
 *.exe
 *.dll
 *.lib
 *.app
 *.out
+<<<<<<< HEAD
 *.so
 *.a
 
@@ -66,10 +90,31 @@ Makefile
 *.tmp
 
 # OpenGL / 3rd party binaries
+=======
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Generated files
+*.ipch
+*.tlog/
+*.lastbuildstate
+*.obj
+*.o
+*.a
+*.lo
+*.la
+*.slo
+
+# OpenGL/GLFW/GLEW/GLM binaries
+>>>>>>> 47c6b83028685fe0ff9247af9bdcd7fe1515257d
 *.lib
 *.dll
 *.so
 *.a
+<<<<<<< HEAD
 
 # MFC resources
 *.res
@@ -85,3 +130,5 @@ Makefile
 *.log
 *.vspscc
 *.vssscc
+=======
+>>>>>>> 47c6b83028685fe0ff9247af9bdcd7fe1515257d
