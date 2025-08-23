@@ -352,16 +352,16 @@ void CGLRenderer::DrawCylinder(double r1, double r2, double h, int nSeg, int tex
 			double tx1 = (double)i / nSeg;
 			double tx2 = (double)(i + 1) / nSeg;
 			double ty = 0.5;
-			glTexCoord2f(tx1, ty + repy1);
+			glTexCoord2f(tx2, ty + repy1);
 			glVertex3f(x12, h, z12);
 
-			glTexCoord2f(tx1, 0 + repy1);
+			glTexCoord2f(tx2, 0 + repy1);
 			glVertex3f(x22, 0, z22);
 
-			glTexCoord2f(tx2, 0 + repy1);
+			glTexCoord2f(tx1, 0 + repy1);
 			glVertex3f(x2, 0, z2);
 
-			glTexCoord2f(tx2, ty + repy1);
+			glTexCoord2f(tx1, ty + repy1);
 			glVertex3f(x1, h, z1);
 		}
 	glEnd();
