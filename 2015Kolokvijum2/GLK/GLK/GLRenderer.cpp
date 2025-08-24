@@ -186,16 +186,19 @@ UINT CGLRenderer::LoadTexture(char* fileName)
 void CGLRenderer::DrawPatch(double R, int n)
 {
 	glColor3f(1,1,1);
-	double ugao = 3.1415926535 /2;
+	double ugaoA = 3.1415926535 / 2;   // pi/2 -> alfa širina
+	double ugaoB = 3.1415926535 / 2;   // pi/2 -> beta visina
 
-	double dA = ugao / n;
 
-	double alfa = -ugao/2;
-	double beta = -ugao/2;
+	double dA = ugaoA / n;
+	double dB = ugaoB / n;
+
+	double alfa = -ugaoA/2;
+	double beta = -ugaoB/2;
 
 
 	for (int i = 0; i < n; i++) {
-		beta = -ugao/2;
+		beta = -ugaoB/2;
 		for (int j = 0; j < n; j++) {
 
 			double x1 = R * sin(beta) * cos(alfa);
