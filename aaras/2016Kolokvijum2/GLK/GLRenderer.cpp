@@ -199,7 +199,7 @@ UINT CGLRenderer::LoadTexture(char* fileName)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 	glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 	
-	gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGBA, img.Width(), img.Height(), GL_BGRA_EXT, GL_UNSIGNED_BYTE, img.GetDIBBits());
+	gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGBA, img.Width(), img.Height(), GL_RGBA, GL_UNSIGNED_BYTE, img.GetDIBBits());
 	glDisable(GL_TEXTURE_2D);
 
 	return id;
@@ -229,6 +229,10 @@ void CGLRenderer::DrawQuad(double a, double x, double y)
 
 void CGLRenderer::DrawCube(double a)
 {
+	glDisable(GL_LIGHTING);
+	glColor3f(1, 1, 1);
+
+
 	glPushMatrix();
 	glRotated(-90, 0, 0, 1);
 	glRotated(90, 1, 0, 0);
@@ -256,10 +260,16 @@ void CGLRenderer::DrawCube(double a)
 	glPopMatrix();
 
 	glPopMatrix();
+
+	glEnable(GL_LIGHTING);
+
 }
 
 void CGLRenderer::DrawTube(double r1, double r2, double h, int n)
 {
+	glDisable(GL_LIGHTING);
+	glColor3f(1, 1, 1);
+
 	double alpha = 2 * PI;
 	double deltaAlpha = 2 * PI / n;
 
@@ -282,12 +292,17 @@ void CGLRenderer::DrawTube(double r1, double r2, double h, int n)
 	}
 
 	glEnd();
+
+	glEnable(GL_LIGHTING);
 }
 
 void CGLRenderer::DrawCone(double r, double h, int n)
 {
 	double alpha = 2 * PI;
 	double deltaAlpha = 2 * PI / n;
+
+
+
 
 	glBegin(GL_TRIANGLE_FAN);
 
